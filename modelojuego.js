@@ -20,7 +20,7 @@ class ModeloJuego{
         const n = shape.length;
         for(let i = 0; i<n; i++){
             for(let j = 0; j<n; j++){
-                if(shapa[i][j] > 0){
+                if(shape[i][j] > 0){
                     let p = x + j;
                     let q = y + i;
                     if(p >= 0 && p < COLS && q < ROWS){
@@ -52,7 +52,23 @@ class ModeloJuego{
     }
 
     modeDown(){
-        
+        if(this.fallingPiece === null){
+            this.renderGameState();
+            return
+        }else if(this.collision(this.fallingPiece.x, this.fallingPiece.y + 1)){
+            const shape = this.fallingPiece.shape;
+            const y = this.fallingPiece.x;
+            const x = this.fallingPiece.y;
+            shape.map((row, i) => {
+                row.map((cell, j) =>{
+                    let p = x + j;
+                    let q = y + i;
+                    if(p >= 0 && p < COLS && q < ROWS && cell > 0){
+                        this.grid[q][p] = shape[i][j];
+                    }
+                })
+            })
+        }
     }
 
 }
