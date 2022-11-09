@@ -38,7 +38,9 @@ class ModeloJuego{
     }
 
     renderGameState(){
-        
+        for(let i = 0; i < this.grid.length; i++){
+            
+        }
     }
 
 }
