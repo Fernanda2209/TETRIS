@@ -26,16 +26,19 @@ class ModeloJuego{
                     if(p >= 0 && p < COLS && q < ROWS){
                         if(this.grid[q][p] > 0){
                             return true;
-
                         }
-
+                    }else {
+                        return true;
                     }
-
                 }
-
             }
-
         }
+
+        return false;
+    }
+
+    renderGameState(){
+        
     }
 
 }
