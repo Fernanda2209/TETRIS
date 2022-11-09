@@ -68,6 +68,14 @@ class ModeloJuego{
                     }
                 })
             })
+
+            if(this.fallingPiece.y === 0){
+                alert("Fin del Juego");
+                this.grid = this.makeStartingGrid();
+            }
+            this.fallingPiece = null;
+        }else{
+            
         }
     }
 
