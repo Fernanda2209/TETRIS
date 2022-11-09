@@ -51,4 +51,8 @@ class ModeloJuego{
         }
     }
 
+    modeDown(){
+        
+    }
+
 }
