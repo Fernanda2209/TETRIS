@@ -14,4 +14,28 @@ class ModeloJuego{
         }
         return grid;
     }
+
+    collision(x, y){
+        const shape = this.fallingPiece.shape;
+        const n = shape.length;
+        for(let i = 0; i<n; i++){
+            for(let j = 0; j<n; j++){
+                if(shapa[i][j] > 0){
+                    let p = x + j;
+                    let q = y + i;
+                    if(p >= 0 && p < COLS && q < ROWS){
+                        if(this.grid[q][p] > 0){
+                            return true;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
 }
