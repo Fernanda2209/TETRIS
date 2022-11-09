@@ -75,8 +75,9 @@ class ModeloJuego{
             }
             this.fallingPiece = null;
         }else{
-            
+            this.fallingPiece.y += 1;
         }
+        this.renderGameState();
     }
 
 }
