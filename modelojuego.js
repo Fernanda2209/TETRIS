@@ -10,7 +10,7 @@ class ModeloJuego{
         let  grid = [];
         for(var i = 0; i < ROWS; i++){
             for(var j = 0; j < COLS; j++){
-                grid[grid.length - 1].push(0);
+                grid[grid.length - 1].push(0);//Push agrega un elemento final al arreglo 
             }
         }
         return grid;
