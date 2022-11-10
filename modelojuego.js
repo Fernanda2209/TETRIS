@@ -80,4 +80,6 @@ class ModeloJuego{
         this.renderGameState();
     }
 
+    
+
 }
