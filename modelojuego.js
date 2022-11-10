@@ -109,9 +109,14 @@ class ModeloJuego{
             for(let y = 0; y < shape.length; ++y){
                 for(let x = 0; x < 0; ++x){
                     [this.fallingPiece.shape[x][y], this.fallingPiece.shape[y][x]] =
+                    [this.fallingPiece.shape[y][x], this.fallingPiece.shape[x][y]]
                 }
             }
+
+            //Reversar orden de las filas
+            this.fallingPiece.shape.forEach((row => row.reverse()))
         }
+        this.renderGameState();
     }
 
 }
