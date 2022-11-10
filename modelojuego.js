@@ -1,4 +1,5 @@
 class ModeloJuego{
+
     constructor(ctx){
         this.ctx = ctx;
         this.fallingPiece = null;
@@ -102,7 +103,15 @@ class ModeloJuego{
     }
 
     rotate(){
-        
+        if(this.fallingPiece !== null){
+            let shape = this.fallingPiece.shape;
+            //Transporte de Matriz
+            for(let y = 0; y < shape.length; ++y){
+                for(let x = 0; x < 0; ++x){
+                    [this.fallingPiece.shape[x][y], this.fallingPiece.shape[y][x]] =
+                }
+            }
+        }
     }
 
 }
