@@ -1,4 +1,4 @@
-class ModeloJuego{
+class GameModel{
 
     constructor(ctx){
         this.ctx = ctx;//Parámetro principal
@@ -9,6 +9,7 @@ class ModeloJuego{
     makeStartingGrid(){
         let  grid = [];
         for(var i = 0; i < ROWS; i++){
+            grid.push([])
             for(var j = 0; j < COLS; j++){
                 grid[grid.length - 1].push(0);//Push agrega un elemento final al arreglo 
             }
@@ -52,7 +53,7 @@ class ModeloJuego{
         }
     }
 
-    modeDown(){
+    moveDown(){
         if(this.fallingPiece === null){
             this.renderGameState();
             return
