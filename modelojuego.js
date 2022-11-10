@@ -80,6 +80,29 @@ class ModeloJuego{
         this.renderGameState();
     }
 
-    
+    move(right){
+        if(this.fallingPiece === null){
+            return;
+        }
+
+        let x = this.fallingPiece.x;
+        let y = this.fallingPiece.y;
+        if(right){
+            //mover derecha
+            if(!this.collision(x + 1, y)){
+                this.fallingPiece.x += 1;
+            }
+        }else{
+            //mover izquierda
+            if(!this.collision(x - 1, y)){
+                this.fallingPiece.x -=1;
+            }
+        }
+        this.renderGameState();
+    }
+
+    rotate(){
+        
+    }
 
 }
