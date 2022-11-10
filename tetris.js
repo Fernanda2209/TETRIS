@@ -1,5 +1,9 @@
 // setup 
 
+/* In this section what we are going to do is to declare the variables that we need in a general way inside the
+ tetris, for this we make use of the structure object and method by means of doument.getElemetById in this 
+ case it is this way because the element is not a class. */
+
 let canvas = document.getElementById("game-canvas") 
 let scoreboard = document.getElementById("scoreboard") 
 let ctx = canvas.getContext("2d") 
