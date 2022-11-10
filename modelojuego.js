@@ -1,8 +1,8 @@
 class ModeloJuego{
 
     constructor(ctx){
-        this.ctx = ctx;
-        this.fallingPiece = null;
+        this.ctx = ctx;//Parámetro principal
+        this.fallingPiece = null;//Booleano
         this.grid = this.makeStartingGrid();
     }
 
