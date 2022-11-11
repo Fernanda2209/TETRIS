@@ -75,6 +75,7 @@ class modeloJuego {
             if (this.fallingPiece.y === 0) {
                 alert("Game over!") 
                 this.grid = this.makeStartingGrid()
+                score = 0;
             }
             this.fallingPiece = null
         } else {
