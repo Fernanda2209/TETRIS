@@ -1,4 +1,4 @@
-class GameModel{
+class ModeloJuego{
 
     constructor(ctx){
         this.ctx = ctx;//Parámetro principal

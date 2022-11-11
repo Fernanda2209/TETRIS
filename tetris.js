@@ -8,7 +8,7 @@ let canvas = document.getElementById("game-canvas")
 let scoreboard = document.getElementById("scoreboard") 
 let ctx = canvas.getContext("2d") 
 ctx.scale(BLOCK_SIDE_LENGTH, BLOCK_SIDE_LENGTH) 
-let model = new GameModel(ctx)
+let model = new ModeloJuego(ctx)
 
 let score = 0 
 
