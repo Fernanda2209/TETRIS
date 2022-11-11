@@ -53,7 +53,7 @@ const SHAPES = [
 
 const COLORS = [
     '#000000',
-    '#FF0000',
+    '#FF5000',
     '#00FF00',
     '#0000FF',
     '#FFFF00',
