@@ -26,6 +26,7 @@
          model.moveDown()
      } else {
          model.moveDown()
+         
      }
  }
  
@@ -47,7 +48,7 @@
          }
      }
  
-     scoreboard.innerHTML = "Score: " + String(score)
+     scoreboard.innerHTML = "Puntaje: " + String(score)
  }
  
  document.addEventListener("keydown", (e) => {
