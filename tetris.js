@@ -4,7 +4,7 @@
  tetris, for this we make use of the structure object and method by means of doument.getElemetById in this 
  case it is this way because the element is not a class. */
 
- let canvas = document.getElementById("game-canvas") 
+ let canvas = document.getElementById("game-canvas")
  let scoreboard = document.getElementById("scoreboard") 
  let ctx = canvas.getContext("2d") 
  ctx.scale(BLOCK_SIDE_LENGTH, BLOCK_SIDE_LENGTH) 

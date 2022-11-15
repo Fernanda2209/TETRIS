@@ -2,11 +2,11 @@ class modeloJuego {//Se Crea la clase modelojuego
     constructor(ctx) {//Se inicializa el constructor con un parametro
         this.ctx = ctx //Se indica el atributo
         this.fallingPiece = null //Valor booleano 
-        this.grid = this.makeStartingGrid()//Inicia el método 
+        this.grid = this.makeStartingGrid()//Inicia el método dentro del constructor
     }
 
     makeStartingGrid() {
-        let grid = [] 
+        let grid = [] //Se crea el arreglo vacío grid
         for (var i = 0; i < ROWS; i++) {
             grid.push([])
             for (var j = 0; j < COLS; j++) {
