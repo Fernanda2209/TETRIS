@@ -7,8 +7,8 @@ class modeloJuego {//Se Crea la clase modelojuego
 
     makeStartingGrid() {
         let grid = [] //Se crea el arreglo vacío grid
-        for (var i = 0; i < ROWS; i++) {//Inicializamos un ciclo for
-            grid.push([])
+        for (var i = 0; i < ROWS; i++) {//Inicializamos un ciclo for anidado
+            grid.push([])//
             for (var j = 0; j < COLS; j++) {
                 grid[grid.length - 1].push(0)
             }
