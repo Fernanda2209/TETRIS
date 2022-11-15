@@ -3,10 +3,29 @@
 #icon-rotate i {
     display: none;
 }
+#icon-rotate{
+    display: none;
+}
 #icon-left i{
     display: none;
 }
+#icon-left{
+    display: none;
+}
 
+#icon-rigth i{
+    display: none;
+}
+#icon-rigth{
+    display: none;
+}
+
+#icon-down i{
+    display: none;
+}
+#icon-down{
+    display: none;
+}
 }
 
 @media (max-width:779px) {
