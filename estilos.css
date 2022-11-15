@@ -13,6 +13,7 @@
     #game-canvas{
         display:block;
         justify-content: center;
+        height: 500px;
     }
     #icon-rotate i{
         font-size: 30px;
