@@ -1,8 +1,8 @@
-class modeloJuego {//Se Crea la clase modelojuego
-    constructor(ctx) {//Se inicializa el constructor con un parametro
-        this.ctx = ctx //Se indica el atributo
-        this.fallingPiece = null //Valor booleano 
-        this.grid = this.makeStartingGrid()//Inicia el método 
+class modeloJuego {
+    constructor(ctx) {
+        this.ctx = ctx 
+        this.fallingPiece = null // piece
+        this.grid = this.makeStartingGrid()
     }
 
     makeStartingGrid() {
@@ -71,7 +71,7 @@ class modeloJuego {//Se Crea la clase modelojuego
                 })
             })
 
-            // Fin del Juego
+            // check game over 
             if (this.fallingPiece.y === 0) {
                 alert("Game over!") 
                 this.grid = this.makeStartingGrid()
