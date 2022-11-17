@@ -73,11 +73,11 @@ body{
     background-color: blueviolet;
     border-radius: 40px;
     width: 170px;
-    height: 50px;
+    height: 40px;
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
-    
     text-align: center;
+    justify-content: center;
     text-decoration: none;
 }
 
@@ -187,9 +187,11 @@ body{
     .title{
         display:block; 
         text-align: center;
-        margin-top: 40px;
+        margin-top: 30%;
         margin-bottom: 15px;
         font-size: 65px;
         font-family: 'Bebas Neue', cursive;
         color: #ffffff;
+}
+
 }
