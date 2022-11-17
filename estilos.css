@@ -53,7 +53,7 @@ body{
     #botones{
         display:block; 
         margin:0 auto;
-        width: 240px;
+        width: 250px;
     }
 
     #game-canvas{
