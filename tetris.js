@@ -67,4 +67,27 @@
              model.move(false) 
              break
      }
- })
+ }
+ )
+ document.getElementById("icon-rotate").addEventListener("click", function() {
+    model.rotate();
+
+  } )
+
+  document.getElementById("icon-rigth").addEventListener("click", function() {
+    model.move(true);
+
+  } )
+
+  document.getElementById("icon-left").addEventListener("click", function() {
+    model.move(false);
+
+  } )
+
+  document.getElementById("icon-down").addEventListener("click", function() {
+    model.moveDown();
+
+  } )
+
+
+
