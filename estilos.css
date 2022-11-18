@@ -46,6 +46,9 @@ body{
         display: none;
     }
 
+    #game-canvas{
+        width: 320px;
+}
 }
 
 
@@ -127,6 +130,7 @@ body{
     #game-canvas{
         height: 500px;
         margin-bottom: 20px;
+        width: 320px;
     }
 
     .imgplay{
@@ -218,6 +222,11 @@ body{
         height: 180px;
     }
     
+    #game-canvas{
+        width: 320px;
+        
+        
+    }
     .title{
         display:block; 
         text-align: center;
@@ -228,4 +237,10 @@ body{
         color: #ffffff;
 }
 
+}
+
+#game-canvas{
+    border: solid #ffffff;
+    border-width: 1px;
+    
 }
