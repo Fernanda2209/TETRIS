@@ -31,7 +31,10 @@
 }
 }
 
-
+body{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(42,8,55,1) 100%, rgba(0,212,255,1) 100%);
+}
 .body2{
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(42,8,55,1) 100%, rgba(0,212,255,1) 100%);
@@ -225,3 +228,4 @@
     border-width: 1px;
     
 }
+
