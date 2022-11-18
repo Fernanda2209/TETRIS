@@ -7,13 +7,13 @@ class modeloJuego {//Se Crea la clase modelojuego
 
     makeStartingGrid() {
         let grid = [] //Se crea el arreglo vacío grid
-        for (var i = 0; i < ROWS; i++) {//Inicializamos un ciclo for anidado
+        for (var i = 0; i < ROWS; i++) {//Inicializamos un ciclo for anidado para las filas
             grid.push([])//Se agrega un espacio al arreglo en el último lugar
-            for (var j = 0; j < COLS; j++) {
-                grid[grid.length - 1].push(0)
+            for (var j = 0; j < COLS; j++) {//Iniciamos el otro for para las columnas
+                grid[grid.length - 1].push(0)//Llenamos el arreglo con el tamaño -1
             }
         }
-        return grid 
+        return grid //Nos devuelve el arreglo
     }
 
     collision(x, y, candidate=null) {
