@@ -128,7 +128,7 @@ body{
     }
 
     #game-canvas{
-        height: 500px;
+        height: 590px;
         margin-bottom: 20px;
         width: 320px;
     }
@@ -224,7 +224,7 @@ body{
     
     #game-canvas{
         width: 300px;
-        height: 610px;
+        height: 600px;
         
         
     }
