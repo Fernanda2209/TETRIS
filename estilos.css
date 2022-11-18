@@ -223,7 +223,8 @@ body{
     }
     
     #game-canvas{
-        width: 320px;
+        width: 300px;
+        height: 610px;
         
         
     }
