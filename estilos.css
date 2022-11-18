@@ -26,20 +26,109 @@
 #icon-down{
     display: none;
 }
+#game-canvas{
+    width: 320px;
+}
 }
 
+
+.body2{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(42,8,55,1) 100%, rgba(0,212,255,1) 100%);
+   
+}
+
+
+.imgplay{
+    display:block; 
+    margin:0 auto;
+    border-radius: 20px;
+    width: 700px;
+    height: 400px;
+}
+    
+
+.playnow{
+    display:block; 
+    margin:0 auto;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: blueviolet;
+    border-radius: 40px;
+    width: 170px;
+    height: 40px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+
+    -webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+            
+}
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+
 @media (max-width:779px) {
+
+    #botones{
+        display:block; 
+        margin:0 auto;
+        width: 250px;
+    }
+
     #game-canvas{
         display:block;
         justify-content: center;
         height: 500px;
         margin-bottom: 20px;
+        width: 320px;
     }
+
+    .imgplay{
+        display:block; 
+        margin:0 auto;
+        border-radius: 20px;
+        width: 600px;
+        height: 350px;
+    }
+    
     #icon-rotate i{
         font-size: 25px;
     }  
     #icon-rotate{
         display: inline-block;
+        margin: 0 auto;
         width: 50px;
         height: 50px;
         border-radius: 100% ;
@@ -81,3 +170,58 @@
     } 
 }
 
+.title{
+    display:block; 
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 65px;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+   
+}
+
+@media (max-width:620px) {
+
+    .imgplay{
+        display:block; 
+        margin:0 auto;
+        border-radius: 20px;
+        width: 500px;
+        height: 270px;
+    }
+    
+}
+
+@media (max-width:520px) {
+
+    .imgplay{
+        display:block; 
+        margin:0 auto;
+        border-radius: 20px;
+        width: 300px;
+        height: 180px;
+    }
+    
+    #game-canvas{
+        width: 300px;
+        height: 610px;
+        
+        
+    }
+    .title{
+        display:block; 
+        text-align: center;
+        margin-top: 45%;
+        margin-bottom: 15px;
+        font-size: 65px;
+        font-family: 'Bebas Neue', cursive;
+        color: #ffffff;
+}
+
+}
+
+#game-canvas{
+    border: solid #ffffff;
+    border-width: 1px;
+    
+}
