@@ -1,8 +1,8 @@
-class modeloJuego {//Se Crea la clase modelojuego
-    constructor(ctx) {//Se inicializa el constructor con un parametro
-        this.ctx = ctx //Se indica el atributo
-        this.fallingPiece = null //Valor booleano 
-        this.grid = this.makeStartingGrid()//Inicia el método 
+class modeloJuego {//The class game model is created
+    constructor(ctx) {//The constructor is initialized with a parameter
+        this.ctx = ctx //The attribute is indicated
+        this.fallingPiece = null //Boolean value 
+        this.grid = this.makeStartingGrid()//Starts the method 
     }
 
     makeStartingGrid() {
