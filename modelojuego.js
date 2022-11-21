@@ -41,14 +41,14 @@ class modeloJuego {//Create a new class
     renderGameState() {//Create a method to render grid
         for (let i = 0; i < this.grid.length; i++) {//Move on the grid length
             for (let j = 0; j < this.grid[i].length; j++) {//Using the iterator to move 
-                let cell = this.grid[i][j]//With two  
-                this.ctx.fillStyle = COLORS[cell] 
-                this.ctx.fillRect(j, i, 1, 1)
+                let cell = this.grid[i][j]//With these two using as coordinates
+                this.ctx.fillStyle = COLORS[cell]//Fill the cells with [COLORS]
+                this.ctx.fillRect(j, i, 1, 1)//Using j & i, and the other two as width and height
             }
         }
 
-        if (this.fallingPiece !== null) {
-            this.fallingPiece.renderPiece()
+        if (this.fallingPiece !== null) {//While the attribute fallingPiece is true 
+            this.fallingPiece.renderPiece()//Use the method renderPiece
         }
     }
 
