@@ -6,14 +6,14 @@ class modeloJuego {//Create a new class
     }
 
     makeStartingGrid() {//Start a method grid
-        let grid = [] //Create an empthy array
-        for (var i = 0; i < ROWS; i++) {//Inicializamos un ciclo for anidado para las filas
-            grid.push([])//Se agrega un espacio al arreglo en el último lugar
-            for (var j = 0; j < COLS; j++) {//Iniciamos el otro for para las columnas
-                grid[grid.length - 1].push(0)//Llenamos el arreglo con el tamaño -1
+        let grid = [] //Create an empty array
+        for (var i = 0; i < ROWS; i++) {//Start a for to ROWS
+            grid.push([])//Add an empty in the last place of array
+            for (var j = 0; j < COLS; j++) {//Start another for to COLUMS
+                grid[grid.length - 1].push(0)//Look into the second place in the array and add another
             }
         }
-        return grid //Nos devuelve el arreglo
+        return grid //Return the array
     }
 
     collision(x, y, candidate=null) {
@@ -38,10 +38,10 @@ class modeloJuego {//Create a new class
         return false
     }
 
-    renderGameState() {
-        for (let i = 0; i < this.grid.length; i++) {
-            for (let j = 0; j < this.grid[i].length; j++) {
-                let cell = this.grid[i][j] 
+    renderGameState() {//Create a method to render grid
+        for (let i = 0; i < this.grid.length; i++) {//Move on the grid length
+            for (let j = 0; j < this.grid[i].length; j++) {//Using the iterator to move 
+                let cell = this.grid[i][j]//With two  
                 this.ctx.fillStyle = COLORS[cell] 
                 this.ctx.fillRect(j, i, 1, 1)
             }
