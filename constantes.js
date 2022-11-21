@@ -1,11 +1,14 @@
 
-const GAME_CLOCK = 1000 
-const BLOCK_SIDE_LENGTH = 30 
-const ROWS = 20 
-const COLS = 10 
-const SCORE_WORTH = 10 
+/* We declare the global variables that we will use throughout the project */
 
-const SHAPES = [
+const GAME_CLOCK = 1000 // Clock that we will use for the parts and the operation of the code in general
+const BLOCK_SIDE_LENGTH = 30 //Length of each block
+const ROWS = 20 // Number of rows
+const COLS = 10 // Number of cols
+const SCORE_WORTH = 10 // Value of the score
+
+const SHAPES = [ 
+    // We start with the matrix and the shape of each figure.
     [],
     [
         [0,0,0,0],
@@ -13,6 +16,9 @@ const SHAPES = [
         [0,0,0,0],
         [0,0,0,0]
     ], 
+    // The number other than 0 draws the figure in space .
+    // This process is done with the other figures.
+    // Each figure is represented by a different number.
 
     [
         [2,0,0],
@@ -52,6 +58,10 @@ const SHAPES = [
 ]
 
 const COLORS = [
+
+    // create the color matrix
+    // Each figure has its own color, we start with 0, which in this case is black, and we continue successively.
+
     '#000',
     '#E5BB35',
     '#46E3BA',

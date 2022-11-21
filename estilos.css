@@ -1,40 +1,57 @@
-
-@media  (min-width: 780px){
-#icon-rotate i {
-    display: none;
-}
-#icon-rotate{
-    display: none;
-}
-#icon-left i{
-    display: none;
-}
-#icon-left{
-    display: none;
-}
-
-#icon-rigth i{
-    display: none;
-}
-#icon-rigth{
-    display: none;
-}
-
-#icon-down i{
-    display: none;
-}
-#icon-down{
-    display: none;
-}
-#game-canvas{
-    width: 320px;
-}
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz@9..144&display=swap');
 
 body{
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(42,8,55,1) 100%, rgba(0,212,255,1) 100%);
 }
+
+.puntaje{
+    display:block; 
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto";
+}
+
+#game-canvas{
+    display:block; 
+    margin:0 auto;
+    height: 550px;
+}
+
+@media  (min-width: 780px){
+    #icon-rotate i {
+        display: none;
+    }
+    #icon-rotate{
+        display: none;
+    }
+    #icon-left i{
+        display: none;
+    }
+    #icon-left{
+        display: none;
+    }
+    
+    #icon-rigth i{
+        display: none;
+    }
+    #icon-rigth{
+        display: none;
+    }
+    
+    #icon-down i{
+        display: none;
+    }
+    #icon-down{
+        display: none;
+    }
+
+    #game-canvas{
+        width: 320px;
+}
+}
+
+
 .body2{
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(42,8,55,1) 100%, rgba(0,212,255,1) 100%);
@@ -111,9 +128,7 @@ body{
     }
 
     #game-canvas{
-        display:block;
-        justify-content: center;
-        height: 500px;
+        height: 590px;
         margin-bottom: 20px;
         width: 320px;
     }
@@ -170,7 +185,9 @@ body{
         height: 50px;
         border-radius: 100%;
         margin-left: 7px;
+
     } 
+
 }
 
 .title{
@@ -207,7 +224,7 @@ body{
     
     #game-canvas{
         width: 300px;
-        height: 610px;
+        height: 525px;
         
         
     }
