@@ -16,13 +16,13 @@ class modeloJuego {//Create a new class
         return grid //Return the array
     }
 
-    collision(x, y, candidate=null) {
-        const shape = candidate || this.fallingPiece.shape 
-        const n = shape.length 
-        for (let i = 0; i < n; i++) {
-            for (let j = 0; j < n; j++) {
-                if (shape[i][j] > 0) {
-                    let p = x + j 
+    collision(x, y, candidate=null) {//Method with three parameters
+        const shape = candidate || this.fallingPiece.shape //A new variable as parameter also a boolean value
+        const n = shape.length //shape length value
+        for (let i = 0; i < n; i++) {//while iterator value equal to shape length value (ROWS)
+            for (let j = 0; j < n; j++) {//while iterator value equal to shape length value (COL)
+                if (shape[i][j] > 0) {//If shape coordinates value are greater than zero
+                    let p = x + j //
                     let q = y + i  
                     if (p >= 0 && p < COLS && q < ROWS) {
                         // in bounds
