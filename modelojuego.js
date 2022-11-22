@@ -72,12 +72,12 @@ class modeloJuego {//Create a new class
             })
 
             // Fin del Juego
-            if (this.fallingPiece.y === 0) {
+            if (this.fallingPiece.y === 0) {//When the piece position is 0 show alert and restart game
                 alert("Game over!") 
                 this.grid = this.makeStartingGrid()
                 score = 0;
             }
-            this.fallingPiece = null
+            this.fallingPiece = null//Stop moving the piece
         } else {
             this.fallingPiece.y += 1
         }
