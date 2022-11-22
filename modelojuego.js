@@ -55,9 +55,9 @@ class modeloJuego {//Create a new class
 
     moveDown() {//Method to move down
         if (this.fallingPiece === null) {//If attribute fallingPiece is null
-            this.renderGameState() 
+            this.renderGameState() //Call method
             return
-        } else if (this.collision(this.fallingPiece.x, this.fallingPiece.y + 1)) {
+        } else if (this.collision(this.fallingPiece.x, this.fallingPiece.y + 1)) {//Call collision method and start again variables
             const shape = this.fallingPiece.shape 
             const x = this.fallingPiece.x 
             const y = this.fallingPiece.y 
