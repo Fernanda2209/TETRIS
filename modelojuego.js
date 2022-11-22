@@ -22,11 +22,11 @@ class modeloJuego {//Create a new class
         for (let i = 0; i < n; i++) {//while iterator value equal to shape length value (ROWS)
             for (let j = 0; j < n; j++) {//while iterator value equal to shape length value (COL)
                 if (shape[i][j] > 0) {//If shape coordinates value are greater than zero
-                    let p = x + j //
+                    let p = x + j //Keep the result between x and j to know if the shape have to collide
                     let q = y + i  
-                    if (p >= 0 && p < COLS && q < ROWS) {
+                    if (p >= 0 && p < COLS && q < ROWS) {//Compare the value with columns and rows
                         // in bounds
-                        if (this.grid[q][p] > 0) {
+                        if (this.grid[q][p] > 0) {//If the value is less than 0 means shape is out the grid
                             return true
                         }
                     } else {
@@ -53,8 +53,8 @@ class modeloJuego {//Create a new class
     }
 
 
-    moveDown() {
-        if (this.fallingPiece === null) {
+    moveDown() {//Method to move down
+        if (this.fallingPiece === null) {//If attribute fallingPiece is null
             this.renderGameState() 
             return
         } else if (this.collision(this.fallingPiece.x, this.fallingPiece.y + 1)) {
