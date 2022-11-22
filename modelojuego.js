@@ -58,14 +58,14 @@ class modeloJuego {//Create a new class
             this.renderGameState() //Call method
             return
         } else if (this.collision(this.fallingPiece.x, this.fallingPiece.y + 1)) {//Call collision method and start again variables
-            const shape = this.fallingPiece.shape 
+            const shape = this.fallingPiece.shape
             const x = this.fallingPiece.x 
             const y = this.fallingPiece.y 
-            shape.map((row, i) => {
+            shape.map((row, i) => {//Using a map to movedown the piece and cell
                 row.map((cell, j) => {
                     let p = x + j 
                     let q = y + i 
-                    if (p >= 0 && p < COLS && q < ROWS && cell > 0) {
+                    if (p >= 0 && p < COLS && q < ROWS && cell > 0) {//While p and q equal or greater to 0 then grid position equal to piece position
                         this.grid[q][p] = shape[i][j]
                     }
                 })
